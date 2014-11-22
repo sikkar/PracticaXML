@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etMarca"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/tvMarca"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/ivFotoaniadir"
+        android:layout_toEndOf="@+id/ivFotoaniadir" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etModelo"
+        android:layout_below="@+id/etMarca"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/tvModelo"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignLeft="@+id/etMarca"
+        android:layout_alignStart="@+id/etMarca" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivFotoaniadir"
+        android:layout_alignTop="@+id/etMarca"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/ic_launcher"
+        android:layout_alignBottom="@+id/etModelo"
+        android:onClick="fotoPick" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etModelo"
+        android:layout_toRightOf="@+id/ivFotoaniadir"
+        android:layout_toEndOf="@+id/ivFotoaniadir"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignWithParentIfMissing="false"
+        android:orientation="horizontal"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/montaña"
+            android:id="@+id/rbMontaña"
+            android:checked="false"
+            android:layout_gravity="left"
+            android:tag="1" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/carretera"
+            android:id="@+id/rbCarretera"
+            android:layout_below="@+id/etModelo"
+            android:layout_toRightOf="@+id/ivFotoaniadir"
+            android:layout_toEndOf="@+id/ivFotoaniadir"
+            android:checked="false"
+            android:tag="0" />
+
+    </RadioGroup>
+
+</RelativeLayout>

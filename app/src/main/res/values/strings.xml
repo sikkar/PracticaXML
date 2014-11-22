@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BikeCatalog</string>
+    <string name="action_settings">Settings</string>
+    <string name="tvMarca">Marca</string>
+    <string name="tvModelo">Modelo</string>
+    <string name="borrar">Borrar</string>
+    <string name="exclamacion">\?</string>
+    <string name="aniadir">Añadir</string>
+    <string name="editar">Editar</string>
+    <string name="alta">Añadir</string>
+    <string name="elAniadido">Elemento Añadido</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="tipo">Tipo</string>
+    <string name="carretera">Carretera</string>
+    <string name="montaña">Montaña</string>
+    <string name="ordenar">Ordenar</string>
+    <string name="existe">La bicicleta ya existe</string>
+    <string name="utilizada">La foto ya esta en uso</string>
+
+</resources>

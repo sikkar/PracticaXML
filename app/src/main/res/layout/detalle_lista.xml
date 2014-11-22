@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/ivFoto"
+        android:src="@drawable/bike"
+        android:layout_marginRight="10dp"
+        android:onClick="cambiarFoto" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tvMarca"
+        android:layout_alignTop="@+id/ivFoto"
+        android:layout_toRightOf="@+id/ivFoto"
+        android:layout_toEndOf="@+id/ivFoto"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/tvMarca"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tvModelo"
+        android:layout_below="@+id/tvMarca"
+        android:layout_toRightOf="@+id/ivFoto"
+        android:layout_toEndOf="@+id/ivFoto"
+        android:layout_alignRight="@+id/tvMarca"
+        android:layout_alignEnd="@+id/tvMarca"
+        android:hint="@string/tvModelo"
+        android:layout_marginLeft="10dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btEliminar"
+        android:layout_below="@+id/tvModelo"
+        android:layout_toRightOf="@+id/ivFoto"
+        android:layout_toEndOf="@+id/ivFoto"
+        android:src="@android:drawable/presence_busy"
+        android:onClick="borrar" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btEditar"
+        android:layout_below="@+id/tvModelo"
+        android:layout_toRightOf="@+id/btEliminar"
+        android:layout_toEndOf="@+id/btEliminar"
+        android:layout_alignParentStart="false"
+        android:src="@android:drawable/ic_menu_edit"
+        android:layout_alignBottom="@+id/btEliminar"
+        android:onClick="editar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tvTipo"
+        android:layout_below="@+id/tvModelo"
+        android:layout_toRightOf="@+id/btEditar"
+        android:layout_toEndOf="@+id/btEditar"
+        android:layout_alignBottom="@+id/btEditar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/tipo"
+        android:gravity="center" />
+</RelativeLayout>

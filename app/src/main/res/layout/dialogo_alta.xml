@@ -38,7 +38,7 @@
         android:layout_alignTop="@+id/etMarca"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/ic_launcher"
+        android:src="@drawable/bike"
         android:layout_alignBottom="@+id/etModelo"
         android:onClick="fotoPick" />
 
